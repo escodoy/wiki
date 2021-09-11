@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entry_title|safe }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entry_title|safe }}</h1>
+
+    <p>Page entry not found.</p>
+
+{% endblock %}

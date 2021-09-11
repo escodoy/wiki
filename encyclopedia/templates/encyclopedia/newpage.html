@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+
+    <form action="{% url 'index' %}">
+        <label for="newtitle">Title: </label>
+        <input type="text" id="newtitle" name="newtitle" autocomplete="off"><br><br>
+        <label for="content">Markdown Page Content:</label><br>
+        <textarea id="content" name="content" class="code"></textarea><br><br>
+        <input type="submit" value="Save">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h1>Duplicate Error for "{{ title|safe }}" page.</h1>
+
+    <p>The new page was not created due to duplication with existing page of the same title.</p>
+
+{% endblock %}
